@@ -1,0 +1,70 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("https://wallpapercave.com/wp/wp11981189.jpg");
+    margin: 0;
+}
+
+.calculator {
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px #0003;
+    padding: 20px;
+    width: 250px;
+    border: 2px solid #220000;
+    background-color: #845252;
+}
+
+.screen {
+    background-color: #ffebeb;
+    border: 2px solid #000000;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: right;
+    border-radius: 3px;
+    min-height: 60px;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #eff9d4;
+    box-shadow: 0px 0px 5px 0px #0002;
+    font-size: 25px;
+}
+
+button:active {
+    background-color: #ff64d6;
+    transform: scale(0.98);
+}
+
+.line:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.line button {
+    float: left;
+}
+.clear {
+    background-color: #ffadad;
+    width: 110px;
+}
+
+.equal {
+    background-color: #89c9b0;
+}
+
+.back{
+    background-color: #ffd6a5;
+    width: 110px;
+}
+
+

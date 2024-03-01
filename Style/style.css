@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Copperplate", fantasy;
+    color:#482b00;
+  }
+
+  body {
+    height: 100%;
+    overflow: hidden; /* Prevents scrolling beyond the viewport */
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("https://wallpapercave.com/wp/wp11981257.jpg") center/cover; 
+    /* border:5px solid red; */
+    
+}
+
+.content{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 60%;
+    /* border: 5px solid blue; */
+    /* background-color: black; */
+}
+
+button{
+    position: absolute;
+    font-size: 100%;
+    color:#ffd296;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 30%;
+    height: 35%;
+    border-radius: 50%;
+    background: radial-gradient(circle, #271600, #482b00, #122f00);
+    box-shadow: 0px 0px 100px #21690b;;
+    z-index: 1;
+}
+
+button:hover{
+    background: radial-gradient(circle, #392000, #603a00, #eba000);
+    box-shadow: 0px 0px 100px #ff3700;;
+}
+.petal-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-origin: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.petal {
+    position: absolute;
+    font-size: 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 40%; /* Adjusted for better fit */
+    height: 40%; /* Adjusted for better fit */
+    border-radius: 50%;
+    /* box-shadow: 0px 0px 50px #3b3e00; */
+    transform-origin: 50% 0%;
+    animation: zoomInOut 3s infinite;
+}
+@keyframes zoomInOut {
+    0%, 100% {
+        font-size: 117%; /* Initial and final state: normal size */
+    }
+    50% {
+        font-size: 130%; /* Middle state: zoomed in */
+    }
+}
+
+.petal:hover a{
+    color: rgb(255, 53, 147);
+}
+/* Adjusting each petal's rotation around the center */
+.petal1 { 
+    transform:translateY(-80%);
+    background: linear-gradient(to bottom, #eeff00,rgb(234, 181, 20), #ff4500);
+ }
+.petal2 { 
+    transform:translateX(62%) translateY(-10%)rotate(-10deg);
+    background: linear-gradient(to left, #eeff00,rgb(234, 181, 20), #ff4500); 
+}
+.petal3 { 
+    transform:translateY(80%) translateX(62%) rotate(20deg); 
+    background: linear-gradient(to left, #eeff00,rgb(234, 181, 20), #ff4500);
+}
+.petal4 {
+    transform:translateY(80%) translateX(-62%) rotate(-20deg); 
+    background: linear-gradient(to right, #eeff00,rgb(234, 180, 20), #ff6200);
+}
+.petal5 { 
+    transform:translateX(-62%) translateY(-10%) rotate(10deg) ; 
+    background: linear-gradient(to right, #eeff00,rgb(234, 181, 20), #ff4500);
+}
+
+@media screen and (min-width: 0px) {
+    .content {
+        width: 100%;
+    }
+    @keyframes zoomInOut {
+        0%, 100% {
+            font-size: 90%; /* Initial and final state: normal size */
+        }
+        50% {
+            font-size: 100%; /* Middle state: zoomed in */
+        }
+    }
+}
+
+@media screen and (min-width: 374px) {
+    .content {
+        width: 90%;
+    }
+    @keyframes zoomInOut {
+        0%, 100% {
+            font-size: 98%; /* Initial and final state: normal size */
+        }
+        50% {
+            font-size: 108%; /* Middle state: zoomed in */
+        }
+    }
+ 
+}
+
+@media screen and (min-width: 410px) {
+    .content {
+        width: 87%;
+    }
+    @keyframes zoomInOut {
+        0%, 100% {
+            font-size: 105%; /* Initial and final state: normal size */
+        }
+        50% {
+            font-size: 115%; /* Middle state: zoomed in */
+        }
+    }
+}
+
+@media screen and (min-width: 470px) {
+    .content {
+        width: 75%;
+    }
+    @keyframes zoomInOut {
+        0%, 100% {
+            font-size: 110%; /* Initial and final state: normal size */
+        }
+        50% {
+            font-size: 120%; /* Middle state: zoomed in */
+        }
+    }
+}
+@media screen and (min-width: 570px) {
+    .content {
+        width: 70%;
+    }
+    @keyframes zoomInOut {
+        0%, 100% {
+            font-size: 110%; /* Initial and final state: normal size */
+        }
+        50% {
+            font-size: 124%; /* Middle state: zoomed in */
+        }
+    }
+}
+@media screen and (min-width: 650px) {
+    .content {
+        width: 67%;
+    }
+
+}
+
+@media screen and (min-width: 700px) {
+    .content {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 765px) {
+    .content {
+        width: 50%;
+    }
+    @keyframes zoomInOut {
+        0%, 100% {
+            font-size: 107%; /* Initial and final state: normal size */
+        }
+        50% {
+            font-size: 120%; /* Middle state: zoomed in */
+        }
+    }
+
+}
+@media screen and (min-width: 900px) {
+    .content {
+        width: 43%;
+    }
+    
+}
+@media screen and (min-width: 1000px) {
+    .content {
+        width: 38%;
+    }
+    
+}
+@media screen and (min-width: 1400px) {
+    .content {
+        width: 35%;
+    }
+    @keyframes zoomInOut {
+        0%, 100% {
+            font-size: 117%; /* Initial and final state: normal size */
+        }
+        50% {
+            font-size: 130%; /* Middle state: zoomed in */
+        }
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .content {
+        width: 30%;
+    }
+}
+@media screen and (min-width: 2000px) {
+    .content {
+        width: 36%;
+    }
+    .mid{
+        font-size: 200%;
+    }
+ 
+    @keyframes zoomInOut {
+        0%, 100% {
+            font-size: 190%; /* Initial and final state: normal size */
+        }
+        50% {
+            font-size: 200%; /* Middle state: zoomed in */
+        }
+    }
+    
+    
+}
